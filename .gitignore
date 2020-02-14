@@ -13,3 +13,7 @@
 /.phpcs-cache
 /phpcs.xml
 ###< squizlabs/php_codesniffer ###
+
+###> outsanity/ip-analysis ###
+data/iana*
+###< outsanity/ip-analysis ###
