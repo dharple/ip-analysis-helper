@@ -50,6 +50,9 @@
     "ork/phpcs": {
         "version": "2.1.0"
     },
+    "outsanity/ip-analysis": {
+        "version": "dev-develop"
+    },
     "outsanity/phpcs": {
         "version": "v0.4.0"
     },
