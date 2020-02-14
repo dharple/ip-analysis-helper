@@ -5,3 +5,10 @@ cd $(dirname $BASE)
 bin/console --multicast=ipv4 --force iana:convert data/iana-ipv4-special-registry-1.csv
 bin/console --multicast=ipv6 --force iana:convert data/iana-ipv6-special-registry-1.csv
 
+sed -i -e '/  [0-9]\+ =>/d' -e s'/^     / \0/' -e 's/^  /\0  /' data/iana-ipv4-special-registry-1.php
+sed -i -e '/  [0-9]\+ =>/d' -e s'/^     / \0/' -e 's/^  /\0  /' data/iana-ipv6-special-registry-1.php
+
+vendor/bin/phpcbf data/
+
+sed -i -e 's/return  /return /' data/iana-ipv4-special-registry-1.php
+sed -i -e 's/return  /return /' data/iana-ipv6-special-registry-1.php

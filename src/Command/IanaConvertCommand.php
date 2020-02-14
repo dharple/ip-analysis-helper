@@ -23,6 +23,9 @@ class IanaConvertCommand extends Command
 {
     protected static $defaultName = 'iana:convert';
 
+    protected $fileFormat =
+        "<?php\n\n/**\n * Converted from the IANA Special Address Registry\n */\n\nreturn %s;";
+
     protected function configure()
     {
         $this
@@ -129,7 +132,7 @@ class IanaConvertCommand extends Command
                 return 1;
         }
 
-        file_put_contents($destinationFile, '<?php return ' . var_export($blocks, true) . ';');
+        file_put_contents($destinationFile, sprintf($this->fileFormat, var_export($blocks, true)));
 
         $io->success('Generated file');
 
