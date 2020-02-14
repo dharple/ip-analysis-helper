@@ -1,6 +1,14 @@
 {
+    "name": "outsanity/ip-analysis-helper",
+    "description": "Tool for converting IANA CSV files to PHP data files",
     "type": "project",
-    "license": "proprietary",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Doug Harple",
+            "email": "dharple@gmail.com"
+        }
+    ],
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",
