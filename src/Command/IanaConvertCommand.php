@@ -23,8 +23,7 @@ class IanaConvertCommand extends Command
 {
     protected static $defaultName = 'iana:convert';
 
-    protected $fileFormat =
-        "<?php\n\n/**\n * Converted from the IANA Special Address Registry\n */\n\nreturn %s;";
+    protected $fileFormat = "<?php\nreturn %s;";
 
     protected function configure()
     {
@@ -132,7 +131,15 @@ class IanaConvertCommand extends Command
                 return 1;
         }
 
-        file_put_contents($destinationFile, sprintf($this->fileFormat, var_export($blocks, true)));
+        $output = var_export($blocks, true);
+
+        $output = str_replace('Outsanity\IpAnalysis\SpecialAddressBlock::__set_state(array(', '[', $output);
+        $output = str_replace(')),', '],', $output);
+
+        $output = str_replace('array (', '[', $output);
+        $output = preg_replace('/[)]$/', ']', $output);
+
+        file_put_contents($destinationFile, sprintf($this->fileFormat, $output));
 
         $io->success('Generated file');
 

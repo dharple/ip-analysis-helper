@@ -10,5 +10,3 @@ sed -i -e '/  [0-9]\+ =>/d' -e s'/^     / \0/' -e 's/^  /\0  /' data/iana-ipv6-s
 
 vendor/bin/phpcbf data/
 
-sed -i -e 's/return  /return /' data/iana-ipv4-special-registry-1.php
-sed -i -e 's/return  /return /' data/iana-ipv6-special-registry-1.php
