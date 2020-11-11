@@ -1,3 +1,10 @@
+###> normal development ###
+*.lock
+*.orig
+*.patch
+*.rej
+###< normal development ###
+
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
