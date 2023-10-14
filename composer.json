@@ -21,6 +21,7 @@
         "symfony/dotenv": "^5.4.5",
         "symfony/flex": "^1.19.3",
         "symfony/framework-bundle": "^5.4.14",
+        "symfony/monolog-bundle": "^3.8",
         "symfony/property-access": "^5.4.15",
         "symfony/property-info": "^5.4.15",
         "symfony/serializer": "^5.4.15",
