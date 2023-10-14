@@ -47,7 +47,7 @@ class IanaConvertCommand extends Command
             return 1;
         }
 
-        $destinationFile = $input->getArgument('destination') ?? preg_replace('/[.]csv$/', '.php', $sourceFile);
+        $destinationFile = $input->getArgument('destination') ?? preg_replace('/[.]csv$/', '.php', (string) $sourceFile);
         if ($sourceFile === $destinationFile) {
             $destinationFile = $destinationFile . '.php';
         }
@@ -103,8 +103,8 @@ class IanaConvertCommand extends Command
         foreach ($blocks as $block) {
             $block->setType(SpecialAddressBlock::TYPE_IANA);
             $cidr = $block->getAddressBlock();
-            if (strpos($cidr, ',')) {
-                $all = explode(', ', $cidr);
+            if (strpos((string) $cidr, ',')) {
+                $all = explode(', ', (string) $cidr);
                 $first = array_shift($all);
                 $block->setAddressBlock(trim($first));
                 foreach ($all as $split) {
