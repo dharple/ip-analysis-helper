@@ -47,6 +47,9 @@
             "composer/package-versions-deprecated": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "symfony/flex": true
+        },
+        "audit": {
+            "abandoned": "fail"
         }
     },
     "autoload": {
