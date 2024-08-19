@@ -133,7 +133,7 @@ class IanaConvertCommand extends Command
 
         $output = var_export($blocks, true);
 
-        $output = str_replace('Outsanity\IpAnalysis\SpecialAddressBlock::__set_state(array(', '[', $output);
+        $output = str_replace('\Outsanity\IpAnalysis\SpecialAddressBlock::__set_state(array(', '[', $output);
         $output = str_replace(')),', '],', $output);
 
         $output = str_replace('array (', '[', $output);
