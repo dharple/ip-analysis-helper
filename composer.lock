@@ -1151,12 +1151,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dharple/ip-analysis.git",
-                "reference": "050abba0482482b152d8f888d21cadb13936b51f"
+                "reference": "4c23fa3baaeb2c35299e3e7ef5bbaefa36ec4b90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/050abba0482482b152d8f888d21cadb13936b51f",
-                "reference": "050abba0482482b152d8f888d21cadb13936b51f",
+                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/4c23fa3baaeb2c35299e3e7ef5bbaefa36ec4b90",
+                "reference": "4c23fa3baaeb2c35299e3e7ef5bbaefa36ec4b90",
                 "shasum": ""
             },
             "require": {
@@ -1211,10 +1211,10 @@
             ],
             "description": "Library for analyzing IP addresses",
             "support": {
-                "source": "https://github.com/dharple/ip-analysis/tree/v3.3.0",
+                "source": "https://github.com/dharple/ip-analysis/tree/v3.4.0",
                 "issues": "https://github.com/dharple/ip-analysis/issues"
             },
-            "time": "2025-06-03T03:16:12+00:00"
+            "time": "2025-08-02T12:35:06+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
