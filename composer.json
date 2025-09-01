@@ -24,6 +24,7 @@
         "symfony/monolog-bundle": "^3.10",
         "symfony/property-access": "^6.4.11",
         "symfony/property-info": "^6.4.10",
+        "symfony/runtime": "^6.4",
         "symfony/serializer": "^6.4.11",
         "symfony/yaml": "^6.4.11"
     },
@@ -45,7 +46,8 @@
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "symfony/flex": true
+            "symfony/flex": true,
+            "symfony/runtime": true
         },
         "audit": {
             "abandoned": "fail"
