@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=8.1.2",
+        "php": "^8.3.23",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^1.14.4",
