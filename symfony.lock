@@ -12,18 +12,6 @@
         },
         "files": []
     },
-    "doctrine/cache": {
-        "version": "1.10.2"
-    },
-    "doctrine/collections": {
-        "version": "1.6.7"
-    },
-    "doctrine/common": {
-        "version": "3.1.1"
-    },
-    "doctrine/dbal": {
-        "version": "2.12.1"
-    },
     "doctrine/deprecations": {
         "version": "1.1",
         "recipe": {
@@ -33,23 +21,11 @@
             "ref": "87424683adc81d7dc305eefec1fced883084aab9"
         }
     },
-    "doctrine/event-manager": {
-        "version": "1.1.1"
-    },
     "doctrine/inflector": {
         "version": "2.0.3"
     },
-    "doctrine/instantiator": {
-        "version": "1.4.0"
-    },
     "doctrine/lexer": {
         "version": "1.2.1"
-    },
-    "doctrine/orm": {
-        "version": "2.8.1"
-    },
-    "doctrine/persistence": {
-        "version": "2.1.0"
     },
     "nikic/php-parser": {
         "version": "v4.10.4"
@@ -222,9 +198,6 @@
         "version": "v1.22.0"
     },
     "symfony/polyfill-mbstring": {
-        "version": "v1.22.0"
-    },
-    "symfony/polyfill-php80": {
         "version": "v1.22.0"
     },
     "symfony/property-access": {
