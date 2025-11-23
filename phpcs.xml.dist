@@ -10,8 +10,7 @@
 
     <rule ref="vendor/outsanity/phpcs/Outsanity/ruleset.xml" />
 
-    <file>bin/</file>
-    <file>config/</file>
+    <file>bin/convert</file>
     <file>src/</file>
 
 </ruleset>

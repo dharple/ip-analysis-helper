@@ -4,6 +4,7 @@ namespace App\Command;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Outsanity\IpAnalysis\SpecialAddressBlock;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -19,16 +20,19 @@ use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
 use Symfony\Component\Serializer\Serializer;
 
+#[
+    AsCommand(
+        name: 'iana:convert',
+        description: 'Converts an IANA .csv file to a .php file for loading in to the IP Analysis library'
+    )
+]
 class IanaConvertCommand extends Command
 {
-    protected static $defaultName = 'iana:convert';
-
     protected $fileFormat = "<?php\nreturn %s;";
 
     protected function configure()
     {
         $this
-            ->setDescription('Converts an IANA .csv file to a .php file for loading in to the IP Analysis library')
             ->addArgument('source', InputArgument::REQUIRED, 'Source file')
             ->addArgument('destination', InputArgument::OPTIONAL, 'Destination file')
             ->addOption('multicast', null, InputOption::VALUE_REQUIRED, 'Add the multicast block for either [ipv4] or [ipv6]')
