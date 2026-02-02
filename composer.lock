@@ -214,12 +214,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dharple/ip-analysis.git",
-                "reference": "c7c997270cfdeb44218ede342246fdaf5cf48ddf"
+                "reference": "8480daa5e9ccc9c29d82709d7d47812b891220aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/c7c997270cfdeb44218ede342246fdaf5cf48ddf",
-                "reference": "c7c997270cfdeb44218ede342246fdaf5cf48ddf",
+                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/8480daa5e9ccc9c29d82709d7d47812b891220aa",
+                "reference": "8480daa5e9ccc9c29d82709d7d47812b891220aa",
                 "shasum": ""
             },
             "require": {
@@ -279,7 +279,7 @@
                 "source": "https://github.com/dharple/ip-analysis/tree/main",
                 "issues": "https://github.com/dharple/ip-analysis/issues"
             },
-            "time": "2025-12-16T01:07:09+00:00"
+            "time": "2026-02-01T13:50:49+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3674,11 +3674,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.37",
+            "version": "2.1.38",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/28cd424c5ea984128c95cfa7ea658808e8954e49",
-                "reference": "28cd424c5ea984128c95cfa7ea658808e8954e49",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dfaf1f530e1663aa167bc3e52197adb221582629",
+                "reference": "dfaf1f530e1663aa167bc3e52197adb221582629",
                 "shasum": ""
             },
             "require": {
@@ -3723,7 +3723,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-24T08:21:55+00:00"
+            "time": "2026-01-30T17:12:46+00:00"
         },
         {
             "name": "rector/rector",
