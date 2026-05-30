@@ -2,26 +2,17 @@
 
 declare(strict_types=1);
 
-use Rector\CodeQuality\Rector\Class_\InlineConstructorDefaultToPropertyRector;
 use Rector\Config\RectorConfig;
-use Rector\Set\ValueObject\LevelSetList;
-use Rector\Symfony\Set\SymfonySetList;
 
-return static function (RectorConfig $rectorConfig): void {
-    $rectorConfig->paths([
+return RectorConfig::configure()
+    ->withPaths([
         __DIR__ . '/bin/convert',
         __DIR__ . '/data',
         __DIR__ . '/src',
-    ]);
-
-    // register a single rule
-    $rectorConfig->rule(InlineConstructorDefaultToPropertyRector::class);
-
-    // define sets of rules
-    $rectorConfig->sets([
-        LevelSetList::UP_TO_PHP_83,
-        SymfonySetList::SYMFONY_64,
-        SymfonySetList::SYMFONY_CODE_QUALITY,
-        SymfonySetList::SYMFONY_CONSTRUCTOR_INJECTION,
-    ]);
-};
+    ])
+    ->withImportNames(
+        importShortClasses: false,
+        removeUnusedImports: true,
+    )
+    ->withPreparedSets(symfonyCodeQuality: true)
+    ->withComposerBased(symfony: true);
