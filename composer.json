@@ -27,10 +27,9 @@
         "symfony/yaml": "^6.4.26"
     },
     "require-dev": {
-        "outsanity/phpcs": ">=0.4.0",
+        "outsanity/phpcs": "^1.1.0",
         "phpstan/phpstan": "^2.1.32",
         "rector/rector": "^2.2.8",
-        "squizlabs/php_codesniffer": "^3.13.5",
         "symfony/maker-bundle": "^1.64"
     },
     "config": {
