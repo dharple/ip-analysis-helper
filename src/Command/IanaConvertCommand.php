@@ -20,12 +20,10 @@ use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
 use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
 use Symfony\Component\Serializer\Serializer;
 
-#[
-    AsCommand(
-        name: 'iana:convert',
-        description: 'Converts an IANA .csv file to a .php file for loading in to the IP Analysis library'
-    )
-]
+#[AsCommand(
+    name: 'iana:convert',
+    description: 'Converts an IANA .csv file to a .php file for loading in to the IP Analysis library'
+)]
 class IanaConvertCommand extends Command
 {
     protected $fileFormat = "<?php\nreturn %s;";
