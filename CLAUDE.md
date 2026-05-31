@@ -1,12 +1,23 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with
+code in this repository.
 
-## Purpose
+## Project Overview
 
-This is a CLI data-conversion utility that transforms IANA IPv4/IPv6 special address registry CSV files into PHP array files consumed by the [ip-analysis](https://github.com/dharple/ip-analysis) library's `SpecialAddressBlock\Factory` class.
+This is a CLI data-conversion utility that transforms IANA IPv4/IPv6 special
+address registry CSV files into PHP array files consumed by the [ip-analysis]
+library's `SpecialAddressBlock\Factory` class.
 
 ## Commands
+
+### Setup
+
+```bash
+composer install
+```
+
+### Running
 
 ```bash
 # Full conversion pipeline (downloads CSVs must already be in data/)
@@ -15,14 +26,23 @@ bin/convert
 # Run a single conversion manually
 bin/console iana:convert data/iana-ipv4-special-registry-1.csv --multicast=ipv4 --force
 bin/console iana:convert data/iana-ipv6-special-registry-1.csv --multicast=ipv6 --force
-
-# Code quality
-composer phpcs       # check code style
-composer phpcbf      # auto-fix code style
-composer phpstan     # static analysis (level 5)
 ```
 
-There is no test suite; quality assurance is handled by PHPStan and PHP CodeSniffer.
+### Dev Tools
+
+```bash
+# All of these commands can take one or more filenames or directories on the
+# command line, to narrow the scope of their execution
+
+composer phpstan   # Static Analysis
+composer phpcs     # Check Code Style
+composer phpcbf    # Fix Code Style
+composer rector     # Show Opportunities for Automatic Refactoring
+
+# Direct access tools
+
+vendor/bin/rector   # Do Automatic Refactoring
+```
 
 ## Architecture
 
@@ -40,3 +60,5 @@ Symfony MicroKernel console application — no HTTP routing, no web layer.
 ## Code Style
 
 The custom `outsanity/phpcs` ruleset (`vendor/outsanity/phpcs/Outsanity/ruleset.xml`) is the enforced standard. Run `composer phpcbf` after edits. Rector is configured for PHP 8.3 and Symfony 6.4 patterns (`rector.php`).
+
+[ip-analysis]: https://github.com/dharple/ip-analysis
