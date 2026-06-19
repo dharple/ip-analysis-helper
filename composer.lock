@@ -214,12 +214,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dharple/ip-analysis.git",
-                "reference": "1bb01118c63db3474edcdc498021961989335b6f"
+                "reference": "3caac12e482748c2511e94464dde4600508958cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/1bb01118c63db3474edcdc498021961989335b6f",
-                "reference": "1bb01118c63db3474edcdc498021961989335b6f",
+                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/3caac12e482748c2511e94464dde4600508958cd",
+                "reference": "3caac12e482748c2511e94464dde4600508958cd",
                 "shasum": ""
             },
             "require": {
@@ -227,9 +227,9 @@
                 "symfony/http-foundation": ">=6.4.29"
             },
             "require-dev": {
-                "outsanity/phpcs": "^1.1.0",
-                "phpstan/phpstan": "^2.2.1",
-                "phpunit/phpunit": "^10.5.63",
+                "outsanity/phpcs": "^1.1.1",
+                "phpstan/phpstan": "^2.2.2",
+                "phpunit/phpunit": "^12.5.29",
                 "rector/rector": "^2.4.5",
                 "symfony/dotenv": "^6.4.39",
                 "symfony/flex": "^2.11.0",
@@ -278,7 +278,7 @@
                 "source": "https://github.com/dharple/ip-analysis/tree/main",
                 "issues": "https://github.com/dharple/ip-analysis/issues"
             },
-            "time": "2026-05-31T00:53:33+00:00"
+            "time": "2026-06-13T01:22:18+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3299,16 +3299,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "9007ea6f45ecf352a9422b36644e4bfc039b9155"
+                "reference": "2ccb7c2e821038c03a3e6e1700c570c158c55f70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/9007ea6f45ecf352a9422b36644e4bfc039b9155",
-                "reference": "9007ea6f45ecf352a9422b36644e4bfc039b9155",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/2ccb7c2e821038c03a3e6e1700c570c158c55f70",
+                "reference": "2ccb7c2e821038c03a3e6e1700c570c158c55f70",
                 "shasum": ""
             },
             "require": {
@@ -3359,9 +3359,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/2.4.0"
+                "source": "https://github.com/webmozarts/assert/tree/2.4.1"
             },
-            "time": "2026-05-20T13:07:01+00:00"
+            "time": "2026-06-15T15:31:57+00:00"
         }
     ],
     "packages-dev": [
@@ -3753,21 +3753,21 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.4.5",
+            "version": "2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "cbd86024be5014d3c14d9f0b3f7aae8ecbffd62c"
+                "reference": "9b9e5c76618e4d359f65b54ca2eabcad3d1761ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/cbd86024be5014d3c14d9f0b3f7aae8ecbffd62c",
-                "reference": "cbd86024be5014d3c14d9f0b3f7aae8ecbffd62c",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/9b9e5c76618e4d359f65b54ca2eabcad3d1761ee",
+                "reference": "9b9e5c76618e4d359f65b54ca2eabcad3d1761ee",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "phpstan/phpstan": "^2.1.56"
+                "phpstan/phpstan": "^2.2.2"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
@@ -3801,7 +3801,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.4.5"
+                "source": "https://github.com/rectorphp/rector/tree/2.4.6"
             },
             "funding": [
                 {
@@ -3809,7 +3809,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-26T21:03:22+00:00"
+            "time": "2026-06-17T11:56:28+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
