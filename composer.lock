@@ -214,12 +214,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dharple/ip-analysis.git",
-                "reference": "3caac12e482748c2511e94464dde4600508958cd"
+                "reference": "da33a4893cba24b54764f20f3a31e37ddab055a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/3caac12e482748c2511e94464dde4600508958cd",
-                "reference": "3caac12e482748c2511e94464dde4600508958cd",
+                "url": "https://api.github.com/repos/dharple/ip-analysis/zipball/da33a4893cba24b54764f20f3a31e37ddab055a4",
+                "reference": "da33a4893cba24b54764f20f3a31e37ddab055a4",
                 "shasum": ""
             },
             "require": {
@@ -278,7 +278,7 @@
                 "source": "https://github.com/dharple/ip-analysis/tree/main",
                 "issues": "https://github.com/dharple/ip-analysis/issues"
             },
-            "time": "2026-06-13T01:22:18+00:00"
+            "time": "2026-08-02T15:22:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
