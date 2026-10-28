@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": "^8.3.30",
+        "php": "^8.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^2.0.2",
@@ -33,9 +33,6 @@
         "symfony/maker-bundle": "^1.67"
     },
     "config": {
-        "platform": {
-            "php": "8.3.30"
-        },
         "preferred-install": {
             "*": "dist"
         },
